@@ -306,6 +306,11 @@ body {
   display: none !important;
 }
 
+.flex{
+  display: flex; 
+  align-items: center;
+}
+
 @media (max-width: 935px) {
   .sidebar {
     display: none;
