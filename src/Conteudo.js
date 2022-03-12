@@ -1,3 +1,4 @@
+import Posts from "./Posts"
 import Story from "./Story"
 
 export default function Conteudo(){
@@ -5,7 +6,7 @@ export default function Conteudo(){
         <div className="corpo">
             <div className="esquerda">
                     <Story />
-                <div className="posts"></div>
+                    <Posts />
             </div>
             <div className="sidebar"></div>
         </div>
