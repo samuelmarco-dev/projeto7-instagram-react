@@ -311,6 +311,10 @@ body {
   align-items: center;
 }
 
+.post .conteudo video{
+  width: 100%;
+}
+
 @media (max-width: 935px) {
   .sidebar {
     display: none;

@@ -9,7 +9,9 @@ export default function Conteudo(){
                 <Story />
                 <Posts />
             </div>
-            <Sidebar /> 
+            <div>
+                <Sidebar /> 
+            </div>
         </div>
     )
 }

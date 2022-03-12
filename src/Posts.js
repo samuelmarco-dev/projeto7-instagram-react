@@ -1,6 +1,7 @@
 import Image from "./Image";
 import IonIcon from "./IonIcon";
 import IconesPost from "./IconesPost";
+import PostVideo from "./PostVideo";
 
 export default function Posts()
 {
@@ -68,6 +69,7 @@ export default function Posts()
   return(
     <div className="posts">
       {post}
+      <PostVideo />
     </div>
   )
 }
