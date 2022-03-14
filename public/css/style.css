@@ -315,6 +315,10 @@ body {
   width: 100%;
 }
 
+.margin{
+  margin-top: 18px;
+}
+
 @media (max-width: 935px) {
   .sidebar {
     display: none;

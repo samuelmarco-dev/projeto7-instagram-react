@@ -8,6 +8,6 @@ export default function FooterMobile(){
             <IonIcon name="add-circle-outline" />
             <IonIcon name="heart-outline" />
             <IonIcon name="person-outline" />
-      </div>
+        </div>
     );
 }

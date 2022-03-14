@@ -1,6 +1,6 @@
 import ReactDom from "react-dom";
 import Navbar from "./Main/Navbar";
-import Conteudo from "./Conteudo";
+import Conteudo from "./Main/Conteudo";
 import FooterMobile from "./Footer/FooterMobile";
 
 function IniciarAplicacao(){

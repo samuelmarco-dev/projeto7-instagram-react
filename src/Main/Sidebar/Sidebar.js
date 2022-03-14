@@ -1,8 +1,9 @@
-import Image from "./Image";
 import LinkSidebar from "./LinkSidebar";
 import Copyright from "./Copyright";
 import TopoSugestoes from "./TopoSugestoes";
 import PerfilUsuario from "./PerfilUsuario";
+import DivSeguir from "./DivSeguir"
+import SugestaoUsuario from "./SugestaoUsuario";
 
 export default function Sidebar(){
     
@@ -38,27 +39,31 @@ export default function Sidebar(){
             info: "Segue você"
         }
     ]
+    const arrayUsuarioSidebar =
+        {
+        srcImage:"assets/img/catanacomics.svg", 
+        alt:"Imagem do Usuário", 
+        nickname:"catanacomics", 
+        nome:"Catana"
+    };
 
     const sugestoesParaSeguir = arraySugestoes.map((sugestao)=>{
         return(
             <div class="sugestao">
-              <div class="usuario">
-                  <Image src={sugestao.srcImg} alt={sugestao.alt} />
-                <div class="texto">
-                  <div class="nome">{sugestao.nome}</div>
-                  <div class="razao">{sugestao.info}</div>
-                </div>
-              </div>
-              <div class="seguir">Seguir</div>
+                <SugestaoUsuario srcImg={sugestao.srcImg} alt={sugestao.alt}
+                nome={sugestao.nome} info={sugestao.info}/>
+                <DivSeguir />
             </div>
         )
     })
 
+    const {srcImage: src, alt, nickname: user, nome: name} = arrayUsuarioSidebar;
+
     return(
     <div className="sidebar">
-        <PerfilUsuario />
+        <PerfilUsuario srcImage={src} alt={alt} nickname={user} nome={name}/>
         <div className="sugestoes">
-            <TopoSugestoes />
+            <TopoSugestoes titulo="Sugestões para você" opcao="Ver tudo"/>
             {sugestoesParaSeguir}
         </div>
         <LinkSidebar />

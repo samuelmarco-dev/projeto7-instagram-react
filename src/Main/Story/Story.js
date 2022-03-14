@@ -1,5 +1,6 @@
-import IonIcon from "./IonIcon";
-import Image from "./Image";
+import Next from "./Next"
+import ImgStory from "./ImgStory";
+import NameStory from "./NameStory";
 
 export default function Story(){
     const arrayBarraStories = [
@@ -15,20 +16,14 @@ export default function Story(){
     const story = arrayBarraStories.map((infos)=>{
         return(
         <div className="story">
-        <div className="imagem">
-            <Image src={infos.src} alt={infos.alt} />
-        </div>
-        <div className="usuario">
-            {infos.texto}
-        </div>
+            <ImgStory src={infos.src} alt={infos.alt} />
+            <NameStory texto={infos.texto} />
         </div>
     )});
 
     return(
     <div className="stories">
         {story}
-        <div class="setinha">
-            <IonIcon name="chevron-forward-circle" />
-        </div>
+        <Next />
     </div>);
 }

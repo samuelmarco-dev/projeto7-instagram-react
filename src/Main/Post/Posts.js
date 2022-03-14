@@ -1,7 +1,8 @@
-import Image from "./Image";
-import IonIcon from "./IonIcon";
-import IconesPost from "./IconesPost";
 import PostVideo from "./PostVideo";
+import TopoPost from "./TopoPost";
+import ConteudoPost from "./ConteudoPost";
+import AcoesPost from "./AcoesPost";
+import CurtidasPost from "./CurtidasPost";
 
 export default function Posts()
 {
@@ -33,35 +34,15 @@ export default function Posts()
   const post = arrayPost.map((postagem)=>{
     return(
       <div class="post">
-        <div class="topo">
-          <div class="usuario">
-            <Image src={postagem.src} alt={postagem.alt} />
-            {postagem.texto}
-          </div>
-          <div class="acoes">
-            <IonIcon name="ellipsis-horizontal" />
-          </div>
-        </div>
-
-        <div class="conteudo">
-          <Image src={postagem.imgConteudo} alt={postagem.altConteudo} />
-        </div>
+        <TopoPost src={postagem.src} alt={postagem.alt} texto={postagem.texto} />
+        <ConteudoPost src={postagem.imgConteudo} alt={postagem.altConteudo} />
 
       <div class="fundo">
-        <div class="acoes">
-          <IconesPost />
-          <div>
-            <IonIcon name="bookmark-outline" />
-          </div>
-        </div>
-
-        <div class="curtidas">
-          <Image src={postagem.fotoPerfil} alt={postagem.altPerfil} />
-          <div class="texto">
-            Curtido por <strong>{postagem.perfil}</strong> e <strong>{postagem.curtidoPor}</strong>
-          </div>
-        </div>
+        <AcoesPost/>
+        <CurtidasPost fotoPerfil={postagem.fotoPerfil} alt={postagem.altPerfil} 
+        perfil={postagem.perfil} curtidoPor={postagem.curtidoPor} />
       </div>
+    
     </div>
     )
   })
