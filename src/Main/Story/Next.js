@@ -2,7 +2,7 @@ import IonIcon from "../../IonIcon"
 
 export default function Next(){
     return(
-        <div class="setinha">
+        <div className="setinha">
             <IonIcon name="chevron-forward-circle" />
         </div>
     )

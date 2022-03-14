@@ -1,5 +1,5 @@
 export default function DivSeguir(){
     return(
-        <div class="seguir">Seguir</div>
+        <div className="seguir">Seguir</div>
     )
 }

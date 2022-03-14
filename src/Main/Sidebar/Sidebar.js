@@ -49,7 +49,7 @@ export default function Sidebar(){
 
     const sugestoesParaSeguir = arraySugestoes.map((sugestao)=>{
         return(
-            <div class="sugestao">
+            <div className="sugestao">
                 <SugestaoUsuario srcImg={sugestao.srcImg} alt={sugestao.alt}
                 nome={sugestao.nome} info={sugestao.info}/>
                 <DivSeguir />

@@ -3,7 +3,7 @@ import IonIcon from "../../IonIcon"
 
 export default function AcoesPost(){
     return(
-        <div class="acoes">
+        <div className="acoes">
           <IconesPost />
             <div>
                 <IonIcon name="bookmark-outline" />

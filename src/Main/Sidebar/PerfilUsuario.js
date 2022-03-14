@@ -5,7 +5,7 @@ export default function PerfilUsuario(prop){
         <div className="usuario">
             <div className="flex">
                 <Image src={prop.srcImage} alt={prop.alt}/>
-                <div class="texto">
+                <div className="texto">
                     <strong>{prop.nickname}</strong>
                 {prop.nome}
                 </div>

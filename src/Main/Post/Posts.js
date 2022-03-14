@@ -33,11 +33,11 @@ export default function Posts()
 
   const post = arrayPost.map((postagem)=>{
     return(
-      <div class="post">
+      <div className="post">
         <TopoPost src={postagem.src} alt={postagem.alt} texto={postagem.texto} />
         <ConteudoPost src={postagem.imgConteudo} alt={postagem.altConteudo} />
 
-      <div class="fundo">
+      <div className="fundo">
         <AcoesPost/>
         <CurtidasPost fotoPerfil={postagem.fotoPerfil} alt={postagem.altPerfil} 
         perfil={postagem.perfil} curtidoPor={postagem.curtidoPor} />

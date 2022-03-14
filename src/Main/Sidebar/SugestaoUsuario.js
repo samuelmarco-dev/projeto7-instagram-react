@@ -2,11 +2,11 @@ import Image from "../../Image"
 
 export default function SugestaoUsuario(prop){
     return(
-        <div class="usuario">
+        <div className="usuario">
                 <Image src={prop.srcImg} alt={prop.alt} />
             <div class="texto">
-                <div class="nome">{prop.nome}</div>
-                <div class="razao">{prop.info}</div>
+                <div className="nome">{prop.nome}</div>
+                <div className="razao">{prop.info}</div>
             </div>
         </div>
     )

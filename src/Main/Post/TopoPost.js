@@ -3,12 +3,12 @@ import IonIcon from "../../IonIcon"
 
 export default function TopoPost(prop){
     return(
-        <div class="topo">
-          <div class="usuario">
+        <div className="topo">
+          <div className="usuario">
             <Image src={prop.src} alt={prop.alt} />
             {prop.texto}
           </div>
-          <div class="acoes">
+          <div className="acoes">
             <IonIcon name="ellipsis-horizontal" />
           </div>
         </div>

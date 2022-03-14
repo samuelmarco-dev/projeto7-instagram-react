@@ -2,7 +2,7 @@ import Video from "./Video";
 
 export default function ConteudoPostVideo(){
     return(
-        <div class="conteudo">
+        <div className="conteudo">
             <Video />
         </div>
     )
