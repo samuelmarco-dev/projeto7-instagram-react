@@ -12,7 +12,7 @@ export default function PostVideo(){
           fotoPerfil: "assets/img/9gag.svg",
           altPerfil: "Imagem Perfil",
           perfil: "9gag",
-          curtidoPor: "outras 1504.276 pessoas",
+          curtidoPor: "outras 154.276 pessoas",
         }
     ]
 
